@@ -1,10 +1,10 @@
 variable "bucket" {
-   description = "Enter the name of the bucket"
+   description = "tf-bucket-19930609"
    type = string
 }
 
 variable "force_destroy" {
-  description = "whether force destroy or not"
+  description = "force destroy "
    type = bool
 
 }
