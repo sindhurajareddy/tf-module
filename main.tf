@@ -1,8 +1,9 @@
 provider "aws" {
-  region = var.region
+    region = "ap-south-1"  
 }
 
-resource "aws_s3_bucket" "example_bucket" {
-   bucket = var.bucket_name
-   acl    = "private"
+
+resource "aws_s3_bucket" "module1-s3" {
+    bucket = vars.bucket
+    force_destroy = vars.force_destroy
 }
