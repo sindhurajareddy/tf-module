@@ -1,11 +1,10 @@
-variable "region" {
-  description = "AWS region"
-  type        = string
-  default     = "ap-south-1"
+variable "bucket" {
+   description = "Enter the name of the bucket"
+   type = string
 }
 
-variable "bucket_name" {
-    description = "name of the s3 bucket"
-    type        = string
-  
+variable "force_destroy" {
+  description = "whether force destroy or not"
+   type = bool
+
 }
